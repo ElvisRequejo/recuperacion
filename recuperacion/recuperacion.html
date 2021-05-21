@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/examen/recuperacion/recuperacion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="vagon">
+            <div class="cabeza">
+                <div class="cabeza1">
+                    <img src="/imagenes/starbucks-logo-4.png" alt="" height="80px" width="80px">
+                </div>
+                <div class="cabeza2"><h1>Sistema de Ventas</h1></div>
+            </div>
+            <div class="container">
+                <div class="lado1">
+                <div class="lado11">
+                    <div class="dato">Fecha:</div>
+                    <div class="dato"> Cliente:</div>
+                    <div class="dato"> Producto:</div>
+                    <div class="dato"> Precio:</div>
+                    <div class="dato"> Cantidad:</div>
+                </div>
+                <div class="lado12">
+                    <input type="date" id="fecha" placeholder="" class="caja" required>
+                <select name="combo" id="cliente" class="caja">
+                    <option value="0"></option>
+                    <option value="FACTURA">JUAN</option>
+                    <option value="BOLETA">ANA</option>
+                    <option value="BOLETA">PEDRO</option>
+                </select>
+                <select name="combo" id="prod" class="caja">
+                    <option value="0"></option>
+                    <option value="FACTURA">ARROZ</option>
+                    <option value="BOLETA">LECHE</option>
+                    <option value="BOLETA">AZUCAR</option>
+                    <option value="BOLETA">SAL</option>
+                </select>
+                <input type="text" placeholder="" class="cajit" id="precio">
+                <input type="text" placeholder="" class="cajit" id="cant">
+                <button class="boton" onclick="guardar()">Registrar</button>
+                </div>
+            </div>
+                <div class="lado2">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Cliente</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead >
+                        <tbody id="tbd"> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <script src="/examen/recuperacion/recuperacion.js"></script>
+</body>
+</html>
